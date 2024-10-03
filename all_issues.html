@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Issues</title>
+    <style>
+        body {
+            background-image: url('logo.png');
+            background-size: 40%; /* Adjust size as needed */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-position: center; /* Center the image on the page */
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center navbar contents */
+            background-color: rgba(0, 0, 0, 0.95); /* Less transparency for better visibility */
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+            margin: 0 10px; /* Spacing between links */
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Less transparency */
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px; /* Increased width for issues page */
+            width: 100%;
+            text-align: center; /* Center the text */
+        }
+        h1 {
+            margin-bottom: 20px; /* Spacing below the heading */
+        }
+        .issues {
+            margin-top: 20px; /* Spacing above the issues */
+            text-align: left; /* Align issues to the left */
+        }
+        .issue {
+            padding: 10px;
+            border: 1px solid #ff5722; /* Border for better visibility */
+            border-radius: 5px;
+            margin: 10px 0; /* Spacing between issues */
+            background-color: rgba(255, 87, 34, 0.1); /* Light background for issues */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div>
+            <a href="departmenthome.html">Home</a>
+            <a href="all_issues.html">All Issues</a>
+            <a href="status_update.html">Status Update</a>
+            <a href="department_profile.html">Profile</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>All Issues</h1>
+        <div class="issues">
+            <div class="issue">Power outage reported in Sector 10.</div>
+            <div class="issue">Water leakage in Community Park.</div>
+            <div class="issue">Traffic congestion near Main Square.</div>
+            <div class="issue">Illegal dumping reported on Riverbank.</div>
+            <div class="issue">Street light malfunction on Main Road.</div>
+            <div class="issue">Potholes reported on City Avenue.</div>
+            <div class="issue">Noise pollution near Industrial Area.</div>
+            <div class="issue">Public restroom maintenance required in City Center.</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Video Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            color: white;
+        }
+
+        .navbar-left h1 {
+            margin-left: 20px;
+            font-size: 28px;
+        }
+
+        .navbar-right a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent buttons */
+            border-radius: 5px;
+        }
+
+        .navbar-right a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .content {
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4); /* Dark background behind text */
+            border-radius: 10px;
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h1>ABOUT</h1>
+        </div>
+        <div class="navbar-right">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+
+    <!-- Content Below Navbar -->
+    <div class="content">
+        <p>
+            Welcome to our platform. We are dedicated to providing the best services to our users. 
+            Please feel free to explore more about us, register to become a member, or log in if you already have an account.
+        </p>
+    </div>
+</body>
+</html>

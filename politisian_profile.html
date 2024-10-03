@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politician Profile</title>
+    <style>
+        body {
+            background-image: url('logo.png');
+            background-size: 40%; /* Adjust size as needed */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-position: center; /* Center the image on the page */
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center navbar contents */
+            background-color: rgba(0, 0, 0, 0.95); /* Less transparency for better visibility */
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+            margin: 0 10px; /* Spacing between links */
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Less transparency */
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px; /* Increased width for the issues page */
+            width: 100%;
+            text-align: center; /* Center the text */
+        }
+        h1 {
+            margin-bottom: 20px; /* Spacing below the heading */
+        }
+        .profile-details {
+            text-align: left; /* Align details to the left */
+            margin-top: 20px; /* Spacing above the profile details */
+        }
+        .profile-item {
+            margin: 10px 0; /* Spacing between items */
+        }
+        .edit-button {
+            padding: 10px 20px;
+            background-color: #ff5722; /* Color for the edit button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px; /* Spacing above the button */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div>
+            <a href="politisianhome.html">Home</a>
+            <a href="view_issues.html">View Issues</a>
+            <a href="respond_to_issue.html">Respond to Issue</a>
+            <a href="send_announcement.html">Send Announcement</a>
+            <a href="view_feedback.html">View Feedback</a>
+            <a href="profile.html">Profile</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Politician Profile</h1>
+        <div class="profile-details">
+            <div class="profile-item"><strong>Name:</strong> John Doe</div>
+            <div class="profile-item"><strong>Email:</strong> john.doe@example.com</div>
+            <div class="profile-item"><strong>Mobile Number:</strong> +1 234 567 890</div>
+            <div class="profile-item"><strong>Position:</strong> City Councillor</div>
+            <div class="profile-item"><strong>Department:</strong> Community Services</div>
+        </div>
+        <button class="edit-button">Edit Profile</button>
+    </div>
+
+</body>
+</html>

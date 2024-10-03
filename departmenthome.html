@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Home</title>
+    <style>
+        body {
+            background-image: url('logo.png');
+            background-size: 40%; /* Adjust size as needed */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-position: center; /* Center the image on the page */
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center navbar contents */
+            background-color: rgba(0, 0, 0, 0.95); /* Less transparency for better visibility */
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+            margin: 0 10px; /* Spacing between links */
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Less transparency */
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px; /* Increased width for department home page */
+            width: 100%;
+            text-align: center; /* Center the text */
+        }
+        h1 {
+            margin-bottom: 20px; /* Spacing below the heading */
+        }
+        p {
+            margin: 10px 0; /* Spacing between paragraphs */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div>
+            <a href="departmenthome.html">Home</a>
+            <a href="all_issues.html">All Issues</a>
+            <a href="status_update.html">Status Update</a>
+            <a href="department_profile.html">Profile</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Department Home</h1>
+        <p>Welcome to the Department Home Page!</p>
+        <p>Here you can manage all departmental tasks and monitor ongoing issues.</p>
+    </div>
+
+</body>
+</html>
